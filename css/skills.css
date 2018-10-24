@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(170, 188, 190);
+}
+
+.wrapper-b{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    
+}
+
+#section-a h3{
+    color: rgb(31, 127, 139);
+    letter-spacing: 3px;
+}
+
+.nav{
+    text-align: right;
+    
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(31, 127, 139);
+    display: block;
+    border: 1px rgb(31, 127, 139) solid;
+    text-align: center;
+    padding: 10px;
+}
+
+label{
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(31, 127, 139);
+}
+
+.menu{
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+#toggle:checked + .menu {
+    display: block;
+
+}
+
+@media only screen and (min-width: 825px){
+    .menu{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(31, 127, 139);
+        padding-top: 20px;
+    }
+
+    .menu a{
+        margin: 0 5px;
+        padding: 5px;
+        border: 1px rgb(31, 127, 139) solid;
+        color: rgb(31, 127, 139);
+        display: inline;
+    }
+
+    .menu a:hover{
+        border: 1px white solid;
+        color: rgb(31, 127, 139);
+    }
+
+    label{
+        display: none;
+    }
+}

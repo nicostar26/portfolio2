@@ -1,0 +1,127 @@
+/* 
+When window is small, hide the full menu and the toggle square
+    show the hamburger icon
+When window is bigger show the full menu and hide the hamburger icon
+
+Media Query will be for wide layout so apply all of the mobile styles in
+    the regular css (mobile first)
+*/
+
+body{
+    background-image: url('../images/compbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper-a{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#section-a h3{
+    color: white;
+    letter-spacing: 3px;
+}
+
+
+
+strong{
+    color: rgb(31, 127, 139);
+}
+
+label{
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(31, 127, 139);
+}
+.nav{
+    text-align: right;
+    
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    border: 1px rgb(31, 127, 139) solid;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu{
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+#toggle:checked + .menu {
+    display: block;
+
+}
+
+.section-a-content {
+    color: white;
+    text-align: center;
+}
+
+.section-a-content p{
+    font-size: 30px;
+}
+
+.section-a-content a{
+    text-decoration: none;
+    padding: 15px;
+    border: 1px rgb(31, 127, 139) solid;
+    color: white;
+    display: none;
+    
+}
+
+/* Media Query for full screen site */
+
+@media only screen and (min-width: 825px){
+    .menu{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(31, 127, 139);
+        padding-top: 20px;
+    }
+
+    .menu a{
+        margin: 0 5px;
+        padding: 5px;
+        border: 1px rgb(31, 127, 139) solid;
+        color: white;
+        display: inline;
+    }
+
+    .menu a:hover{
+        border: 1px white solid;
+        color: rgb(31, 127, 139);
+    }
+
+    label{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .section-a-content{
+        margin-top: 100px;
+    }
+    .section-a-content a{
+        text-decoration: none;
+        padding: 15px;
+        border: 1px rgb(31, 127, 139) solid;
+        color: white;
+        display: inline; 
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .section-a-content{
+        margin-top: 200px;
+    }
+}
